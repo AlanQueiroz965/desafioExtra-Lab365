@@ -31,7 +31,15 @@
 
         <section class="sobre-nos">
             <h2>Sobre Nós</h2>
-            <p>A Zootopia é o melhor lugar para cuidar do seu pet com amor e carinho.</p>
+            <p>No Pet Shop Zootopia, acreditamos que cada animal de estimação é uma parte única e especial da família. 
+                Localizados no coração da cidade, somos mais do que apenas uma loja; somos um refúgio dedicado ao bem-estar, 
+                saúde e felicidade dos seus melhores amigos.
+                <br>
+                Nossa jornada começou com a paixão por criar um ambiente onde cães, 
+                gatos e outros pequenos animais pudessem se sentir em casa. Inspirados pela diversidade do mundo animal, 
+                trouxemos para o nosso espaço um conceito de cuidado integral, 
+                unindo serviços de alta qualidade a um atendimento humanizado e carinhoso.
+            </p>
         </section>
 
         <section class="servicos">
@@ -65,9 +73,14 @@
         <section class="contato">
             <h2>Contato</h2>
             <form action="#">
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu email" required>
-                <textarea placeholder="Sua mensagem" required></textarea>
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <label for="email">Seu email</label>
+                <input type="email" id="email" placeholder="Seu email" required>
+                <label for="telefone">Seu telefone</label>
+                <input type="tel" id="telefone" placeholder="Seu telefone" required>
+                <label for="mensagem">Sua mensagem</label>
+                <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </section>
