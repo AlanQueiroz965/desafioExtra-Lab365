@@ -4,7 +4,7 @@ Projeto desenvolvido como parte do curso **Introdução à Programação Front-E
 
 ## 🔗 Link de Acesso
 O projeto pode ser visualizado online através do link abaixo:
-👉 **[INSIRA AQUI O LINK DO SITE ONLINE]**
+👉 **https://alanqueiroz965.github.io/desafioExtra-Lab365/**
 
 ## 👤 Identificação
 *   **Projeto:** Landing Page PetShop
