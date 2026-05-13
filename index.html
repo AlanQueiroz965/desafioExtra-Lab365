@@ -1,94 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Michroma&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Michroma&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Pet-Shop</title>
 </head>
+
 <body>
-    <header class="header">
-        <h1 id="logo">Pet-Shop <br>
-            Zootopia</h1>
-        <nav class="nav">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre-nos">Sobre Nós</a></li>
-                <li><a href="#servicos">Nossos serviços</a></li>
-                <li><a href="#contato">Contato</a></li>               
-            </ul>
-        </nav>
+
+    <!--cabeçalho-->
+    <header>
+        <div class="container cabecalho">
+            <div class="logo"><span class="rosa">Zootopia</span><br>
+                Pet-Shop</div>
+
+            <button class="hamburguer"></button>
+
+            <!--menu de navegação-->
+            <nav class="menu">
+
+                <a href="#home">Home</a>
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#servicos">Nossos serviços</a>
+                <a href="#contato">Contato</a>
+
+            </nav>
+
+        </div>
     </header>
+
+    <!--conteúdo principal HERO SECTION-->
     <main>
-        <section class="home" id="home">
-            <h2>Bem-vindo ao Pet-Shop Zootopia!</h2>
-            <p>O melhor lugar para cuidar do seu pet com amor e carinho.</p>
-            <a href="#" class="btn">Agende uma visita</a>
-            <img src="C:\Users\alanq\OneDrive\Documentos\DesafioExtra-Lab365\imagens\pug-dog-isolated-white-background.svg" alt="imagem de um cachorro da raça Pug">
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero_conteudo">
+                    <h1>Bem-vindo ao Pet-Shop Zootopia!</h1>
+                    <p>O melhor lugar para cuidar do seu pet com amor e carinho.</p>
+                    <div class="hero_acoes">
+                        <button>Agendar atendimento!</button>
+                        <a href="#">conheça nossos serviços</a>
+                    </div>
+                </div>
+
+                <div class="hero_imagem">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/048/051/017/small/a-pug-dog-is-standing-on-its-hind-legs-on-transparent-background-png.png"
+                        alt="imagem de um cachorro da raça Pug">
+                </div>
+            </div>
+        </section>
+        <!--sobre nós -->
+        <section class="container sobre" id="sobre">
+            <h2>Sobre a Zootopia Pet-Shop</h2>
+
+            <div class="sobre_info">
+
+                <div class="container paragrafo">
+                    <p>No Pet Shop Zootopia, acreditamos que cada animal de estimação é uma parte única e especial
+                        da
+                        família. <br>
+
+                        Localizados no coração da cidade, somos mais do que apenas uma loja; somos um refúgio
+                        dedicado
+                        ao
+                        bem-estar,<br>
+
+                        saúde e felicidade dos seus melhores amigos.
+                        Nossa jornada começou com a paixão por criar um ambiente onde cães, <br>
+
+                        gatos e outros pequenos animais pudessem se sentir em casa. Inspirados pela diversidade do
+                        mundo
+                        animal, <br>
+
+                        trouxemos para o nosso espaço um conceito de cuidado integral,
+                        unindo serviços de alta qualidade a um atendimento humanizado e carinhoso.
+                    </p>
+                </div>
+
+                <div class="sobre_indicadores">
+                    <div class="sobre_indicador_item">
+                        <strong><span class="amarelo">+</span>200 </strong>
+                        <span> Pets atendidos</span>
+                    </div>
+                    <div class="sobre_indicador_item">
+                        <strong><span class="amarelo">+</span>5 </strong>
+                        <span> Anos de experiência</span>
+                    </div>
+                    <div class="sobre_indicador_item">
+                        <strong>100<span class="amarelo">% </span></strong>
+                        <span> Satisfação dos clientes</span>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
 
-        <section class="sobre-nos" id="sobre-nos">
-            <h2>Sobre Nós</h2>
-            <p>No Pet Shop Zootopia, acreditamos que cada animal de estimação é uma parte única e especial da família. 
-                Localizados no coração da cidade, somos mais do que apenas uma loja; somos um refúgio dedicado ao bem-estar, 
-                saúde e felicidade dos seus melhores amigos.
-                <br>
-                Nossa jornada começou com a paixão por criar um ambiente onde cães, 
-                gatos e outros pequenos animais pudessem se sentir em casa. Inspirados pela diversidade do mundo animal, 
-                trouxemos para o nosso espaço um conceito de cuidado integral, 
-                unindo serviços de alta qualidade a um atendimento humanizado e carinhoso.
-            </p>
-        </section>
 
-        <section class="servicos" id="servicos">
-            <h2>Nossos Serviços</h2>
-            <div class="service-item">
-                <h3>Banho e Tosa</h3>
-                <p>Deixe seu pet limpo e estiloso com nossos serviços de banho e tosa.</p>
-            </div>
-            <div class="service-item">
-                <h3>Veterinário</h3>
-                <p>Cuidamos da saúde do seu pet com consultas veterinárias de qualidade.</p>
-            </div>
-            <div class="service-item">
-                <h3>Adestramento</h3>
-                <p>Ensine seu pet a se comportar com nossos serviços de adestramento profissional.</p>
-            </div>
-        </section>
 
-        <section class="testemunhos" id="testemunhos">
-            <h2>O que dizem nossos clientes</h2>
-            <div class="testemunho-item">
-                <p>"O Pet-Shop Zootopia é incrível! Meu cachorro adora ir lá e os funcionários são super atenciosos."</p>
-                <span>- Maria S.</span>
-            </div>
-            <div class="testemunho-item">
-                <p>"Recomendo o Pet-Shop Zootopia para todos os donos de pets. Eles cuidam do meu gato como se fosse deles."</p>
-                <span>- João P.</span>
-            </div>
-        </section>
 
         <section class="contato" id="contato">
-            <h2>Contato</h2>
-            <form action="#">
-                <label for="nome">Seu nome</label>
-                <input type="text" id="nome" placeholder="Seu nome" required>
-                <label for="email">Seu email</label>
-                <input type="email" id="email" placeholder="Seu email" required>
-                <label for="telefone">Seu telefone</label>
-                <input type="tel" id="telefone" placeholder="Seu telefone" required>
-                <label for="mensagem">Sua mensagem</label>
-                <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+            <div class="container">
+                <h2 class="titulo_secao">contato</h2>
+
+            </div>
+            <div class="container_contato">
+                <div class="contato_info">
+                    <div>
+                        <form class="contato_formulario">
+                            <input type="text" placeholder="seu nome" required>
+                            <input type="email" placeholder="seu email" required>
+                            <textarea placeholder="como podemos ajudar seu pet?" rows="4" required></textarea>
+                            <button type="submit">Enviar mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-        <footer>
-            <p>&copy; 2024 Pet-Shop Zootopia. Todos os direitos reservados.</p>
-        </footer>
+    <script src="script.js"></script>
+
+    <footer class="footer" <p>&copy; 2024 Pet-Shop Zootopia. Todos os direitos reservados.</p>
+    </footer>
 </body>
+
 </html>
