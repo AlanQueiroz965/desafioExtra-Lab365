@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Michroma&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="style.css">
     <title>Pet-Shop</title>
 </head>
@@ -26,7 +27,7 @@
             <!--menu de navegação-->
             <nav class="menu">
 
-                <a href="#home">Home</a>
+                <a href="#hero">Home</a>
                 <a href="#sobre">Sobre Nós</a>
                 <a href="#servicos">Nossos serviços</a>
                 <a href="#contato">Contato</a>
@@ -45,7 +46,7 @@
                     <p>O melhor lugar para cuidar do seu pet com amor e carinho.</p>
                     <div class="hero_acoes">
                         <button>Agendar atendimento!</button>
-                        <a href="#">conheça nossos serviços</a>
+                        <a href="servicos">conheça nossos serviços</a>
                     </div>
                 </div>
 
@@ -102,33 +103,135 @@
 
         </section>
 
-
-
-
-        <section class="contato" id="contato">
+        <!--SERVIÇOS -->
+        <section class="servicos" id="servicos" aria-labelledby="servicos-titulo">
             <div class="container">
-                <h2 class="titulo_secao">contato</h2>
+                <h2 id="servicos-titulo" class="titulo_secao_servicos">Nossos Serviços</h2>
+                <div class="servicos_grid">
 
-            </div>
-            <div class="container_contato">
-                <div class="contato_info">
-                    <div>
-                        <form class="contato_formulario">
-                            <input type="text" placeholder="seu nome" required>
-                            <input type="email" placeholder="seu email" required>
-                            <textarea placeholder="como podemos ajudar seu pet?" rows="4" required></textarea>
-                            <button type="submit">Enviar mensagem</button>
-                        </form>
+                    <!-- Card 1 -->
+                    <div class="servico_card">
+                        <div class="servico_icone"><i class="fa-solid fa-soap"></i></div>
+                        <h3>Banho & Tosa</h3>
+                        <p>Higiene completa, corte de unhas e hidratação com produtos específicos para cada tipo de
+                            pelagem.</p>
                     </div>
+
+                    <!-- Card 2 -->
+                    <div class="servico_card">
+                        <div class="servico_icone"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h3>Atendimento Veterinário</h3>
+                        <p>Consultas preventivas, vacinação em dia e profissionais qualificados prontos para cuidar da
+                            saúde do seu pet.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="servico_card">
+                        <div class="servico_icone"><i class="fa-solid fa-hotel"></i></div>
+                        <h3>Hotelzinho Canino</h3>
+                        <p>Hospedagem confortável, monitoramento contínuo e rotinas de atividades físicas para que ele
+                            se divirta com segurança.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="servico_card">
+                        <div class="servico_icone"><i class="fa-solid fa-bone"></i></div>
+                        <h3>Pet Shop & Nutrição</h3>
+                        <p>Acessórios, brinquedos interativos e uma grande variedade de rações premium e petiscos
+                            saudáveis.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
+
+
+        <section class="contato" id="contato" aria-labelledby="contato-titulo">
+            <div class="container">
+                <h2 id="contato-titulo" class="titulo_secao">Contato</h2>
+            </div>
+
+            <div class="container_contato">
+                <form class="contato_formulario" id="meuFormulario">
+                    <div class="form_grupo">
+                        <label for="nome" class="form_label">Seu nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: Abner Queiroz" required>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label for="email" class="form_label">Seu e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Ex: abner@email.com" required>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label for="mensagem" class="form_label">Como podemos ajudar seu pet?</label>
+                        <textarea id="mensagem" name="mensagem" rows="4"
+                            placeholder="Descreva brevemente o que seu pet precisa..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn_enviar">Enviar mensagem</button>
+                </form>
+
+                <!-- Bloco da Mensagem de Sucesso -->
+                <div id="feedbackSucesso" class="mensagem_sucesso" role="alert">
+                    🐾 Obrigado! Sua mensagem foi enviada. Responderemos em breve!
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <script src="script.js"></script>
 
-    <footer class="footer" <p>&copy; 2024 Pet-Shop Zootopia. Todos os direitos reservados.</p>
+    <!-- RODAPÉ MELHORADO (FOOTER) -->
+    <footer class="footer">
+        <div class="container footer_conteudo">
+
+            <!-- Coluna 1: Logo e Slogan -->
+            <div class="footer_coluna">
+                <div class="logo"><span class="rosa">Zootopia</span><br>Pet-Shop</div>
+                <p class="footer_descricao">Cuidando do bem-estar e da felicidade do seu melhor amigo em todos os
+                    momentos.</p>
+            </div>
+
+            <!-- Coluna 2: Links Rápidos -->
+            <div class="footer_coluna">
+                <h3>Links Úteis</h3>
+                <ul class="footer_links">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Contato Rápido -->
+            <div class="footer_coluna">
+                <h3>Atendimento</h3>
+                <p><i class="fa-solid fa-phone"></i> (48) 99999-9999</p>
+                <p><i class="fa-solid fa-envelope"></i> contato@zootopia.com</p>
+                <p><i class="fa-solid fa-map-marker-alt"></i> São José, SC - Brasil</p>
+            </div>
+
+            <!-- Coluna 4: Redes Sociais -->
+            <div class="footer_coluna">
+                <h3>Siga a Zootopia</h3>
+                <div class="footer_redes">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Direitos Autorais -->
+        <div class="footer_direitos">
+            <p>&copy; 2026 Pet-Shop Zootopia. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
 </body>
 
 </html>
